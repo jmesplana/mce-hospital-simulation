@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/mce-hospital-simulation/', // Update this if your repo name is different
+  base: '/mce-hospital-simulation/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
