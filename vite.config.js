@@ -4,9 +4,10 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   base: '/mce-hospital-simulation/',
-  esbuild: {
-    loader: 'jsx', // Set the loader directly to 'jsx'
-  },
+esbuild: {
+  loader: 'jsx', // This is correct
+  include: /\.jsx?$/, // Match .js and .jsx files
+},
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
